@@ -288,6 +288,30 @@ Affinity (kcal/mol)
 This value corresponds to the predicted binding affinity reported by GNINA for each docking pose.
 
 The best-scoring pose affinity value was used as the GNINA prediction for benchmarking comparisons.
+
+---
+##  Files in this Directory
+
+Typical contents of this folder include:
+```text
+GNINA/
+├── README.md
+├── run_GNINA_PDB.ipynb
+├── run_GNINA_DUD-E.ipynb
+├── PDBBind/
+│   └── index.csv
+│   └── 1b8y_protein.pdb
+│   └── 1b8y_ligand.sdf
+│   └── 1bju_protein.pdb
+│   └── 1bju_ligand.sdf
+└── DUD-E/
+    └── index.csv
+    └── 1A28.pdb
+    └── 1A28_0.sdf
+    └── 1CVU.pdb
+    └── 1CVU_0.sdf
+```
+
 ---
 
 
