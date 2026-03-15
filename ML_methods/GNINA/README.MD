@@ -237,11 +237,11 @@ The dataset used in this study contains:
 
 ```bash
 ├── PDBBind/
-│   └── index.csv
-│   └── 1b8y_protein.pdb
-│   └── 1b8y_ligand.sdf
-│   └── 1bju_protein.pdb
-│   └── 1bju_ligand.sdf
+    └── index.csv
+    └── 1b8y_protein.pdb
+    └── 1b8y_ligand.sdf
+    └── 1bju_protein.pdb
+    └── 1bju_ligand.sdf
 ```
 ---
 
