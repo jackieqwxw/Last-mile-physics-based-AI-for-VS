@@ -236,7 +236,7 @@ For additional installation options, usage examples, and advanced settings, refe
 The dataset used in this study contains:
 
 ```bash
-├── PDBBind/
+└── PDBBind/
     └── index.csv
     └── 1b8y_protein.pdb
     └── 1b8y_ligand.sdf
@@ -271,9 +271,9 @@ GNINA produces an SDF output file for each docking run.
 
 ```bash
 Example output:
-├── result_docking3/
-│   └── 1b8y.sdf
-│   └── 1bju.sdf
+└── result_docking3/
+    └── 1b8y.sdf
+    └── 1bju.sdf
 ```
 
 Each SDF file contains docking poses and associated scoring information.
