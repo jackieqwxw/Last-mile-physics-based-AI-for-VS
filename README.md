@@ -26,15 +26,24 @@ The physics module predicts protein–ligand binding free energies using alchemi
    - FEP setup and analysis scripts
    
    ### Quick Start (Minimal Example)
+   Navigate to `Physics-based methods` dir and start to run ..
+   ---
    1. Prepare ligand SDF and protein PDB
    2. Run ligand parameterization:
+      ```
       cd LigPara && sbatch LigPara.sh ligands.sdf 0
+      ```
    3. Compute free energies using MM/PB(GB)SA:
+      ```
       cd MMPBSA && sbatch gmxmmpbsa.sh
+      ```
    4. Compute free energies using FEP:
+      ```
       cd FEP && sbatch FEP.sh
+      ```
    
-   ### Common Pitfalls
+   ### Notes
+   - The dataset_632 directory includes all prepared proteins and ligands in the manuscript
    - Ensure ligands with different net charges are separated into different SDF files
    - Separate complexes with and without ions
    - Check periodic boundary conditions before MM/PB(GB)SA
