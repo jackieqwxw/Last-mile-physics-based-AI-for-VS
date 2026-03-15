@@ -233,6 +233,8 @@ If you use Boltz-2, please cite the official Boltz publications listed in the or
   journal = {bioRxiv}
 }
 ```
+If you use the scripts, bash or workflow provided in this repository, please also cite:
 
+Wang Xiaowen, Hamza Hentabli, Mettu Akhila, Kireev Dmitri. "The Last Mile Problem: A Critical Assessment of Physics-based and AI Tools in Virtual Screening."
 
 
