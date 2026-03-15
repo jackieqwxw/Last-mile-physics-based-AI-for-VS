@@ -20,13 +20,13 @@ The physics module predicts protein–ligand binding free energies using alchemi
    - Protein structure (PDB)
    
    ### Provided by This Repository
+   - All prepared protein and ligand structures
    - Parameterization scripts
    - MD input templates
    - MM/PB(GB)SA workflows
    - FEP setup and analysis scripts
-   
-   ### Quick Start (Minimal Example)
-   Navigate to `Physics-based methods` dir and start to run ..
+      
+   ### Navigate to `Physics-based methods` dir and start to run ..
    ---
    1. Prepare ligand SDF and protein PDB
    2. Run ligand parameterization:
