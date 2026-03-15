@@ -6,16 +6,6 @@ This directory documents the procedure used to generate **GNINA affinity predict
 
 GNINA was used as a deep learning–enhanced docking and scoring method to evaluate protein–ligand binding affinity predictions in comparison with other machine learning and physics-based methods.
 
-
-
-
-
-
-This directory documents the procedure used to generate **GNINA affinity predictions** for the benchmark described in the manuscript:
-
-**The Last Mile Problem: A Critical Assessment of Physics-based and AI Tools in Virtual Screening.**
-
-GNINA was used as a deep learning–enhanced docking and scoring method to evaluate protein–ligand binding affinity predictions in comparison with other machine learning and physics-based methods.
 ---
 
 ## Method Overview
@@ -108,7 +98,7 @@ Purpose:
 ```
 Purpose:
 
-ensures compatibility with GNINA molecular processing tools
+- ensures compatibility with GNINA molecular processing tools
 
 ---
 
@@ -120,7 +110,7 @@ sys.path.append('/usr/local/lib/python3.8/site-packages/')
 ```
 Purpose:
 
-ensures installed packages are available to Python
+- ensures installed packages are available to Python
 ---
 
 #### Install Visualization Library
@@ -130,7 +120,7 @@ ensures installed packages are available to Python
 ```
 Purpose:
 
-enables 3D visualization of docking results in notebooks
+- enables 3D visualization of docking results in notebooks
 
 ---
 ### 2. Download GNINA
@@ -158,9 +148,9 @@ This prints the GNINA help message.
 
 GNINA docking requires:
 
-receptor structure (PDB)
+- receptor structure (PDB)
 
-ligand structure (SDF or PDB)
+- ligand structure (SDF or PDB)
 
 Example command:
 
@@ -171,9 +161,9 @@ Example command:
 Explanation of options:
 
 Option	Meaning
--r	receptor structure
--l	ligand structure
---autobox_ligand	automatically define docking box around ligand
+- -r	receptor structure
+- -l	ligand structure
+- -autobox_ligand	automatically define docking box around ligand
 
 This performs docking and prints predicted poses and affinity scores.
 
@@ -187,7 +177,7 @@ To save docking results:
 !./gnina -r rec.pdb -l lig.pdb --autobox_ligand lig.pdb --seed 0 -o docked.sdf.gz
 ```
 
-Explanation of additional options:
+- Explanation of additional options:
 
 Option	Meaning
 
@@ -202,7 +192,7 @@ Output file:
 docked.sdf.gz
 ```
 
-Each pose contains predicted affinity values.
+- Each pose contains predicted affinity values.
 ---
 
 ### 5. Scoring Only (No Docking)
@@ -217,7 +207,7 @@ Purpose:
 
 evaluate affinity without running docking
 
-useful for rescoring docked poses
+- useful for rescoring docked poses
 
 ---
 
@@ -236,20 +226,24 @@ To print scoring terms used by GNINA
 ```
 
 These commands show how GNINA computes its predicted binding affinity.
+---
+
+For additional installation options, usage examples, and advanced settings, refer to the official documentation of [GNINA](https://github.com/gnina/gnina) on GitHub. The repository provides detailed instructions, command examples, and updates for different platforms.
 
 ---
-Input Dataset
+## Input Dataset
 
 The dataset used in this study contains:
 
-
 ```bash
-index.csv
-1b8y_protein.pdb
-1b8y_ligand.sdf
+├── PDBBind/
+│   └── index.csv
+│   └── 1b8y_protein.pdb
+│   └── 1b8y_ligand.sdf
+│   └── 1bju_protein.pdb
+│   └── 1bju_ligand.sdf
 ```
 ---
-
 
 ## Batch Docking Script
 
@@ -277,10 +271,9 @@ GNINA produces an SDF output file for each docking run.
 
 ```bash
 Example output:
-result_docking3/
-0_1b8y.sdf
-1_2xyz.sdf
-2_3abc.sdf
+├── result_docking3/
+│   └── 1b8y.sdf
+│   └── 1bju.sdf
 ```
 
 Each SDF file contains docking poses and associated scoring information.
@@ -320,8 +313,6 @@ GNINA project:
 https://github.com/gnina/gnina
 ```
 
-
-If you use GNINA in your research, please cite:
 
 McNutt, A. T.; Francoeur, P.; Aggarwal, R.; Masuda, T.; Meli, R.; Ragoza, M.; Sunseri, J.; Koes, D. R.  
 **GNINA 1.0: Molecular Docking with Deep Learning.**  
