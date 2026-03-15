@@ -358,6 +358,9 @@ https://doi.org/10.1186/s13321-021-00522-2
 }
 ```
 
+If you use the scripts or workflow provided in this repository, please also cite:
 
+Hamza Hentabli et al.
+"The Last Mile Problem: A Critical Assessment of Physics-based and AI Tools in Virtual Screening."
 
 
