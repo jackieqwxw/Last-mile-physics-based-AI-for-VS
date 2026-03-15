@@ -1,0 +1,25 @@
+Sample input file for entropy calculations
+#This input file is meant to show only that gmx_MMPBSA works. Although, we tried to use the input files as recommended in the
+#Amber manual, some parameters have been changed to perform more expensive calculations in a reasonable amount of time. Feel free to change the parameters
+#according to what is better for your system.
+
+&general
+sys_name="NMode",
+startframe=1,
+endframe=1000,
+forcefields="leaprc.protein.ff14SB,leaprc.gaff"
+PBRadii=2,
+/
+#&gb
+#igb=5, saltcon=0.150,
+#/
+#&pb
+#istrng=0.150
+#/
+&nmode
+nmstartframe=1,
+nmendframe=1000,
+nminterval=40,
+#maxcyc=10000, drms=0.01,
+#maxcyc=5, drms=2,
+/
